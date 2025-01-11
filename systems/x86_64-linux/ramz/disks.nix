@@ -50,6 +50,10 @@
                     };
                     "/nix" = {
                       mountpoint = "/nix";
+                      mountOptions = ["subvol=nix" "compress=zstd" "noatime"];
+                    };
+                    "/persist" = {
+                      mountpoint = "/persist";
                       mountOptions = ["subvol=persist" "compress=zstd" "noatime"];
                     };
                     "/log" = {

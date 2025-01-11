@@ -1,12 +1,9 @@
 {
-  config,
   lib,
   modulesPath,
-  namespace,
   ...
 }: let
   inherit (lib) mkDefault;
-  inherit (lib.${namespace}) enabled;
 in {
   imports = [
     (modulesPath + "/installer/scan/not-detected.nix")
