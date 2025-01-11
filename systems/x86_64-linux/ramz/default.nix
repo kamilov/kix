@@ -3,6 +3,7 @@
   namespace,
   ...
 }: let
+  inherit (lib) mkForce;
   inherit (lib.${namespace}) enabled;
 in {
   imports = [
@@ -11,6 +12,17 @@ in {
   ];
 
   config = {
+    boot = {
+      kernelParams = ["resume_offset=533760"];
+      supportedFilesystems = mkForce ["btrfs"];
+      resumeDevice = "/dev/disk/by-label/os";
+
+      initrd = {
+        supportedFilesystems = ["nfs"];
+        kernelModules = ["nfs"];
+      };
+    };
+
     ${namespace} = {
       hardware = {
         bluetooth = enabled;

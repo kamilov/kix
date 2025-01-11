@@ -23,6 +23,8 @@ in {
       jetbrains.idea-ultimate
       jetbrains.phpstorm
       jetbrains.rust-rover
+
+      telegram-desktop
     ];
 
     ${namespace} = {
