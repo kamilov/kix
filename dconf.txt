@@ -1,0 +1,231 @@
+[org/gnome/Characters]
+recent-characters=['🪑']
+
+[org/gnome/Console]
+audible-bell=false
+custom-font='Liberation Mono 10'
+ignore-scrollback-limit=true
+last-window-maximised=true
+last-window-size=(652, 480)
+theme='night'
+visual-bell=false
+
+[org/gnome/Snapshot]
+is-maximized=false
+show-composition-guidelines=false
+window-height=640
+window-width=800
+
+[org/gnome/TextEditor]
+last-save-directory='file:///home/ramzych'
+
+[org/gnome/calendar]
+active-view='month'
+window-maximized=true
+window-size=(768, 600)
+
+[org/gnome/control-center]
+last-panel='background'
+window-state=(980, 640, false)
+
+[org/gnome/desktop/app-folders]
+folder-children=['Utilities', 'YaST', 'Pardus', '9f24eb40-526b-4770-a80e-ae37dbe3f3ae']
+
+[org/gnome/desktop/app-folders/folders/9f24eb40-526b-4770-a80e-ae37dbe3f3ae]
+apps=['goland.desktop', 'idea-ultimate.desktop', 'pycharm-professional.desktop', 'rust-rover.desktop']
+name='Programming'
+
+[org/gnome/desktop/app-folders/folders/Pardus]
+categories=['X-Pardus-Apps']
+name='X-Pardus-Apps.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/Utilities]
+apps=['gnome-abrt.desktop', 'gnome-system-log.desktop', 'nm-connection-editor.desktop', 'org.gnome.baobab.desktop', 'org.gnome.Connections.desktop', 'org.gnome.DejaDup.desktop', 'org.gnome.Dictionary.desktop', 'org.gnome.DiskUtility.desktop', 'org.gnome.Evince.desktop', 'org.gnome.FileRoller.desktop', 'org.gnome.fonts.desktop', 'org.gnome.Loupe.desktop', 'org.gnome.seahorse.Application.desktop', 'org.gnome.tweaks.desktop', 'org.gnome.Usage.desktop', 'vinagre.desktop', 'org.rnd2.cpupower_gui.desktop']
+categories=['X-GNOME-Utilities']
+name='X-GNOME-Utilities.directory'
+translate=true
+
+[org/gnome/desktop/app-folders/folders/YaST]
+categories=['X-SuSE-YaST']
+name='suse-yast.directory'
+translate=true
+
+[org/gnome/desktop/background]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///run/current-system/sw/share/backgrounds/gnome/lcd-rainbow-l.jxl'
+picture-uri-dark='file:///run/current-system/sw/share/backgrounds/gnome/lcd-rainbow-d.jxl'
+primary-color='#f9f06b'
+secondary-color='#c64600'
+
+[org/gnome/desktop/calendar]
+show-weekdate=false
+
+[org/gnome/desktop/input-sources]
+mru-sources=[('xkb', 'us')]
+sources=[('xkb', 'us'), ('xkb', 'ru')]
+xkb-options=['terminate:ctrl_alt_bksp']
+
+[org/gnome/desktop/interface]
+accent-color='teal'
+clock-show-date=false
+clock-show-seconds=false
+clock-show-weekday=false
+color-scheme='prefer-dark'
+
+[org/gnome/desktop/notifications]
+application-children=['org-gnome-console', 'gnome-power-panel', 'org-gnome-settings', 'dev-zed-zed', 'google-chrome', 'org-telegram-desktop', 'chrome-lpnfhanjlhkfmolheenfojlhdcjdoaoa-profile-1', 'firefox', 'org-gnome-nautilus']
+
+[org/gnome/desktop/notifications/application/chrome-lpnfhanjlhkfmolheenfojlhdcjdoaoa-profile-1]
+application-id='chrome-lpnfhanjlhkfmolheenfojlhdcjdoaoa-Profile_1.desktop'
+
+[org/gnome/desktop/notifications/application/dev-zed-zed]
+application-id='dev.zed.Zed.desktop'
+
+[org/gnome/desktop/notifications/application/firefox]
+application-id='firefox.desktop'
+
+[org/gnome/desktop/notifications/application/gnome-power-panel]
+application-id='gnome-power-panel.desktop'
+
+[org/gnome/desktop/notifications/application/google-chrome]
+application-id='google-chrome.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-console]
+application-id='org.gnome.Console.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-nautilus]
+application-id='org.gnome.Nautilus.desktop'
+
+[org/gnome/desktop/notifications/application/org-gnome-settings]
+application-id='org.gnome.Settings.desktop'
+
+[org/gnome/desktop/notifications/application/org-telegram-desktop]
+application-id='org.telegram.desktop.desktop'
+
+[org/gnome/desktop/peripherals/keyboard]
+numlock-state=true
+
+[org/gnome/desktop/peripherals/touchpad]
+speed=1.0
+two-finger-scrolling-enabled=true
+
+[org/gnome/desktop/screensaver]
+color-shading-type='solid'
+picture-options='zoom'
+picture-uri='file:///run/current-system/sw/share/backgrounds/gnome/lcd-rainbow-l.jxl'
+primary-color='#f9f06b'
+secondary-color='#c64600'
+
+[org/gnome/epiphany]
+ask-for-default=false
+default-search-engine='Google'
+homepage-url='about:newtab'
+search-engine-providers=[{'url': <'https://www.bing.com/search?q=%s'>, 'bang': <'!b'>, 'name': <'Bing'>}, {'url': <'https://duckduckgo.com/?q=%s&t=epiphany&kd=-1'>, 'bang': <'!ddg'>, 'name': <'DuckDuckGo'>}, {'url': <'https://www.google.com/search?q=%s'>, 'bang': <'!g'>, 'name': <'Google'>}]
+
+[org/gnome/epiphany/state]
+is-maximized=true
+window-size=(2560, 1568)
+
+[org/gnome/epiphany/web]
+language=['system', 'ru-RU']
+
+[org/gnome/evolution-data-server]
+migrated=true
+
+[org/gnome/mutter]
+dynamic-workspaces=true
+edge-tiling=true
+experimental-features=['scale-monitor-framebuffer']
+workspaces-only-on-primary=true
+
+[org/gnome/nautilus/preferences]
+default-folder-viewer='icon-view'
+migrated-gtk-settings=true
+search-filter-time-type='last_modified'
+
+[org/gnome/nautilus/window-state]
+initial-size=(890, 550)
+initial-size-file-chooser=(890, 550)
+
+[org/gnome/nm-applet/eap/03950ad7-d507-4f3e-9ff1-85f3f768490d]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/76a4353e-040b-4ac5-8248-0c6a9709d180]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/87558a2f-3976-4231-a485-6a4dd504fa2b]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/8d7a1873-c9ef-4dc4-92f2-3b98a0c6903c]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/nm-applet/eap/b4fab733-db4b-496d-b61e-1ad41628a6c7]
+ignore-ca-cert=false
+ignore-phase2-ca-cert=false
+
+[org/gnome/portal/filechooser/Mattermost]
+last-folder-path='/home/ramzych/Downloads'
+
+[org/gnome/portal/filechooser/dev.zed.Zed]
+last-folder-path='/home/ramzych/Projects/nixos'
+
+[org/gnome/portal/filechooser/gnome-network-panel]
+last-folder-path='/home/ramzych/Downloads'
+
+[org/gnome/portal/filechooser/google-chrome]
+last-folder-path='/home/ramzych/Downloads'
+
+[org/gnome/portal/filechooser/org.gnome.Settings]
+last-folder-path='/home/ramzych/Downloads'
+
+[org/gnome/settings-daemon/plugins/color]
+night-light-schedule-automatic=false
+
+[org/gnome/shell]
+app-picker-layout=[{'org.gnome.Calendar.desktop': <{'position': <0>}>, 'org.gnome.Snapshot.desktop': <{'position': <1>}>, 'org.gnome.Extensions.desktop': <{'position': <2>}>, '9f24eb40-526b-4770-a80e-ae37dbe3f3ae': <{'position': <3>}>, 'google-chrome.desktop': <{'position': <4>}>, 'cups.desktop': <{'position': <5>}>, 'nixos-manual.desktop': <{'position': <6>}>, 'org.gnome.Calculator.desktop': <{'position': <7>}>, 'org.telegram.desktop.desktop': <{'position': <8>}>, 'org.gnome.TextEditor.desktop': <{'position': <9>}>, 'org.gnome.Settings.desktop': <{'position': <10>}>, 'org.gnome.SystemMonitor.desktop': <{'position': <11>}>, 'dev.zed.Zed.desktop': <{'position': <12>}>, 'chrome-lpnfhanjlhkfmolheenfojlhdcjdoaoa-Profile_1.desktop': <{'position': <13>}>, 'Utilities': <{'position': <14>}>, 'Mattermost.desktop': <{'position': <15>}>, 'mongodb-compass.desktop': <{'position': <16>}>, 'code.desktop': <{'position': <17>}>}]
+disabled-extensions=['system-monitor@gnome-shell-extensions.gcampax.github.com', 'status-icons@gnome-shell-extensions.gcampax.github.com']
+enabled-extensions=['trayIconsReloaded@selfmade.pl', 'appindicatorsupport@rgcjonas.gmail.com']
+favorite-apps=['org.gnome.Nautilus.desktop', 'org.gnome.Console.desktop']
+last-selected-power-profile='performance'
+remember-mount-password=false
+welcome-dialog-last-shown-version='47.1'
+
+[org/gnome/shell/app-switcher]
+current-workspace-only=true
+
+[org/gtk/gtk4/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=true
+show-size-column=true
+show-type-column=true
+sidebar-width=140
+sort-column='name'
+sort-directories-first=true
+sort-order='ascending'
+type-format='category'
+view-type='list'
+window-size=(857, 372)
+
+[org/gtk/settings/file-chooser]
+date-format='regular'
+location-mode='path-bar'
+show-hidden=false
+show-size-column=true
+show-type-column=true
+sidebar-width=170
+sort-column='name'
+sort-directories-first=false
+sort-order='ascending'
+type-format='category'
+window-position=(26, 23)
+window-size=(1231, 902)
+
+[system/locale]
+region='ru_RU.UTF-8'
