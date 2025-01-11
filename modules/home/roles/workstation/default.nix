@@ -17,6 +17,8 @@ in {
   config = mkIf cfg.enable {
     # IDE's for development
     home.packages = with pkgs; [
+      tmux
+
       jetbrains.goland
       jetbrains.idea-ultimate
       jetbrains.phpstorm

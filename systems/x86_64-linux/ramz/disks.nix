@@ -42,19 +42,19 @@
                   subvolumes = {
                     "/root" = {
                       mountpoint = "/";
-                      mountoptions = ["subvol=root" "compress=zstd" "noatime"];
+                      mountOptions = ["subvol=root" "compress=zstd" "noatime"];
                     };
                     "/home" = {
                       mountpoint = "/home";
-                      mountoptions = ["subvol=home" "compress=zstd" "noatime"];
+                      mountOptions = ["subvol=home" "compress=zstd" "noatime"];
                     };
                     "/nix" = {
                       mountpoint = "/nix";
-                      mountoptions = ["subvol=persist" "compress=zstd" "noatime"];
+                      mountOptions = ["subvol=persist" "compress=zstd" "noatime"];
                     };
                     "/log" = {
                       mountpoint = "/var/log";
-                      mountoptions = ["subvol=root" "compress=zstd" "noatime"];
+                      mountOptions = ["subvol=log" "compress=zstd" "noatime"];
                     };
                     "/swap" = {
                       mountpoint = "/swap";

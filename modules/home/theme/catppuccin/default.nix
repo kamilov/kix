@@ -9,7 +9,7 @@
 
   cfg = config.${namespace}.theme.catppuccin;
   gtkCfg = config.${namespace}.theme.gtk;
-  isGnomeEnabled = config.${namespace}.dektop.gnome.enable;
+  isGnomeEnabled = config.${namespace}.desktop.gnome.enable;
 
   catppuccinAccents = [
     "rosewater"

@@ -23,8 +23,8 @@ in {
     home.packages = with pkgs;
       [
         loupe
-        gnome-calculator
         file-roller
+        gnome-calculator
         gnome-disk-utility
 
         wallpapers
