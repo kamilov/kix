@@ -7,7 +7,7 @@
 }: let
   inherit (builtins) toPath;
   inherit (lib) mkIf;
-  inherit (lib.${namespace}) mkBoolOpt;
+  inherit (lib.${namespace}) mkBoolOpt enabled;
 
   cfg = config.${namespace}.dev.java;
 in {
@@ -20,11 +20,6 @@ in {
       jetbrains.idea-ultimate
     ];
 
-    programs.java = {
-      enable = true;
-      package = pkgs.jdk.overrideAttrs {
-        home = toPath "${config.user.homeDirectory}/.local/dev/jdk";
-      };
-    };
+    programs.java = enabled;
   };
 }

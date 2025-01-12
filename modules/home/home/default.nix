@@ -119,7 +119,7 @@ in {
         XDG_CONFIG_HOME = "$HOME/.config";
         XDG_DATA_HOME = "$HOME/.local/share";
         XDG_DESKTOP_DIR = "$HOME";
-        PATH = concatMapStringsSep ":" (path: toString path) pathCfg ++ ["$XDG_BIN_HOME" "$NIXOSCONFIG_BIN" "$PATH"];
+        PATH = concatMapStringsSep ":" (path: toString path) (pathCfg ++ ["$XDG_BIN_HOME" "$NIXOSCONFIG_BIN" "$PATH"]);
       };
 
     packages = with pkgs; [

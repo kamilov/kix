@@ -24,10 +24,10 @@ in {
       jetbrains.rust-rover
     ];
 
-    environment.sessionVariables = {
-      CARGO_HOME = "${config.hone.userDirectory}/.local/dev/cargo";
+    home.sessionVariables = {
+      CARGO_HOME = "${config.home.homeDirectory}/.local/dev/cargo";
     };
 
-    home.${namespace}.path = ["$CARGO_HOME/bin"];
+    ${namespace}.path = ["$CARGO_HOME/bin"];
   };
 }

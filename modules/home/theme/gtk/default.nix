@@ -120,14 +120,14 @@ in {
 
     dconf.settings = {
       "org/gnome/shell/extensions/user-theme" = {
-        inherit (cfg.theme) name;
+        name = mkDefault cfg.theme.name;
       };
 
       "org/gnome/desktop/inteface" = {
-        cursot-theme = cfg.cursor.name;
-        cursor-size = cfg.cursor.size;
-        gtk-theme = cfg.theme.name;
-        icon-theme = cfg.icons.name;
+        cursot-theme = mkDefault cfg.cursor.name;
+        cursor-size = mkDefault cfg.cursor.size;
+        gtk-theme = mkDefault cfg.theme.name;
+        icon-theme = mkDefault cfg.icons.name;
       };
     };
 

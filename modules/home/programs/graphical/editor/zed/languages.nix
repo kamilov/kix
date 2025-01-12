@@ -4,7 +4,7 @@ pkgs: {
     nil
   ];
 
-  extension = ["nix"];
+  extensions = ["nix"];
 
   lsp = {
     nixd.settings.diagnostic.suppress = ["sema-extra-with"];
