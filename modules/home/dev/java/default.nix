@@ -5,7 +5,6 @@
   namespace,
   ...
 }: let
-  inherit (builtins) toPath;
   inherit (lib) mkIf;
   inherit (lib.${namespace}) mkBoolOpt enabled;
 

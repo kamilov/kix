@@ -7,7 +7,7 @@
   ...
 }: let
   inherit (builtins) filter toString;
-  inherit (lib) mkIf listToAttrs mapAttrsToList flatten nameValuePair concatMapStringsSep types;
+  inherit (lib) mkIf listToAttrs mapAttrsToList flatten nameValuePair types;
   inherit (lib.${namespace}) mkOpt force-attrs;
 
   xdgCfg = config.${namespace}.xdg;
@@ -119,8 +119,9 @@ in {
         XDG_CONFIG_HOME = "$HOME/.config";
         XDG_DATA_HOME = "$HOME/.local/share";
         XDG_DESKTOP_DIR = "$HOME";
-        PATH = concatMapStringsSep ":" (path: toString path) (pathCfg ++ ["$XDG_BIN_HOME" "$NIXOSCONFIG_BIN" "$PATH"]);
       };
+
+    sessionPath = map (path: toString path) (pathCfg ++ ["$XDG_BIN_HOME" "$NIXOSCONFIG_BIN"]);
 
     packages = with pkgs; [
       xdg-utils

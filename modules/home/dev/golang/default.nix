@@ -16,8 +16,14 @@ in {
   };
 
   config = mkIf cfg.enable {
+    home.sessionVariables = {
+      GO111MODULE = "on";
+    };
+
     home.packages = with pkgs; [
       jetbrains.goland
+
+      go-task
     ];
 
     programs.go = {

@@ -33,6 +33,10 @@ in {
           settitle "bash"
         }
       '';
+
+      profileExtra = ''
+        [[ -f ~/.local/.profile ]] && . ~/.local/.profile
+      '';
     };
   };
 }
