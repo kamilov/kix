@@ -13,7 +13,7 @@
   languages = import ./languages.nix pkgs;
 in {
   config.programs.zed-editor = mkIf cfg.enable {
-    inherit (languages) extraPackages;
+    inherit (languages) extraPackages extensions;
 
     userSettings = mkMerge [
       {inherit (languages) lsp languages;}

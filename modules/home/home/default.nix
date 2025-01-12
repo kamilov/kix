@@ -6,11 +6,12 @@
   namespace,
   ...
 }: let
-  inherit (builtins) filter;
-  inherit (lib) mkIf listToAttrs mapAttrsToList flatten nameValuePair types;
+  inherit (builtins) filter toString;
+  inherit (lib) mkIf listToAttrs mapAttrsToList flatten nameValuePair concatMapStringsSep types;
   inherit (lib.${namespace}) mkOpt force-attrs;
 
   xdgCfg = config.${namespace}.xdg;
+  pathCfg = config.${namespace}.path;
   mimeMap = {
     browser = [
       "text/html"
@@ -91,16 +92,20 @@
     )
   );
 in {
-  options.${namespace}.xdg = with types; {
-    browser = mkOpt str "" "The browser desktop entry name.";
-    editor = mkOpt str "" "The editor desktop entry name.";
-    image = mkOpt str "" "The image viewer desktop entry name.";
-    video = mkOpt str "" "The video application desktop entry name.";
-    files = mkOpt str "" "The file manager desktop entry name.";
-    office = mkOpt str "" "The office application desktop entry name.";
-    terminal = mkOpt str "" "The terminal application desktop entry name.";
-    archive = mkOpt str "" "The arvive application desktop entry name.";
-    associations = mkOpt attrs {} "Mixed mime types associations.";
+  options.${namespace} = with types; {
+    xdg = {
+      browser = mkOpt str "" "The browser desktop entry name.";
+      editor = mkOpt str "" "The editor desktop entry name.";
+      image = mkOpt str "" "The image viewer desktop entry name.";
+      video = mkOpt str "" "The video application desktop entry name.";
+      files = mkOpt str "" "The file manager desktop entry name.";
+      office = mkOpt str "" "The office application desktop entry name.";
+      terminal = mkOpt str "" "The terminal application desktop entry name.";
+      archive = mkOpt str "" "The arvive application desktop entry name.";
+      associations = mkOpt attrs {} "Mixed mime types associations.";
+    };
+
+    path = mkOpt (listOf (oneOf [str path])) [] "Environment PATH extend";
   };
 
   config.home = {
@@ -114,6 +119,7 @@ in {
         XDG_CONFIG_HOME = "$HOME/.config";
         XDG_DATA_HOME = "$HOME/.local/share";
         XDG_DESKTOP_DIR = "$HOME";
+        PATH = concatMapStringsSep ":" (path: toString path) pathCfg ++ ["$XDG_BIN_HOME" "$NIXOSCONFIG_BIN" "$PATH"];
       };
 
     packages = with pkgs; [

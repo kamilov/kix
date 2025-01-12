@@ -118,6 +118,19 @@ in {
       };
     };
 
+    dconf.settings = {
+      "org/gnome/shell/extensions/user-theme" = {
+        inherit (cfg.theme) name;
+      };
+
+      "org/gnome/desktop/inteface" = {
+        cursot-theme = cfg.cursor.name;
+        cursor-size = cfg.cursor.size;
+        gtk-theme = cfg.theme.name;
+        icon-theme = cfg.icons.name;
+      };
+    };
+
     xdg.configFile = let
       gtk4Dir = "${cfg.theme.package}/share/themes/${cfg.theme.name}/gtk-4.0";
     in {

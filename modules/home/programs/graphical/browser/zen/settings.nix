@@ -71,6 +71,7 @@ in {
           text = userSettings (profile.settings
             // {
               "app.update.auto" = false;
+              "app.update.checkInstallTime" = false;
             });
           force = true;
         };

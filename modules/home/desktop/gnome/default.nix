@@ -9,7 +9,6 @@
   inherit (lib.${namespace}) mkBoolOpt mkOpt enabled nested-default-attrs;
 
   cfg = config.${namespace}.desktop.gnome;
-  gtkCfg = config.${namespace}.theme.gtk;
   wallpapers = pkgs.${namespace}.wallpapers;
 in {
   options.${namespace}.desktop.gnome = with types; {
@@ -54,16 +53,8 @@ in {
             current-workspace-only = true;
           };
 
-          "org/gnome/shell/extensions/user-theme" = {
-            inherit (gtkCfg.theme) name;
-          };
-
           "org/gnome/desktop/inteface" = {
             color-scheme = "prefer-dark";
-            cursot-theme = gtkCfg.cursor.name;
-            cursor-size = gtkCfg.cursor.size;
-            gtk-theme = gtkCfg.theme.name;
-            icon-theme = gtkCfg.icons.name;
             font-name = "jetbrains";
             enable-hot-corners = true;
 
